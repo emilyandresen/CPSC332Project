@@ -6,6 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
     <link href="my-styles.css" rel="stylesheet">
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --light-periwinkle: rgb(200, 225, 255);
+            --medium-periwinkle: rgb(170, 200, 255);
+            --dark-periwinkle: rgb(23, 49, 96);
+
+            --light-sage: rgb(178, 188, 138);
+            --medium-sage: rgb(150, 154, 110);
+            --dark-sage: rgb(91, 95, 58);
+
+            --light-forest: rgb(185, 226, 204);
+            --medium-forest: rgb(82, 195, 138);
+            --dark-forest: rgb(6, 58, 32);
+
+            --light-rose: rgb(238, 203, 221);
+            --medium-rose: rgb(209, 146, 178);
+            --dark-rose: rgb(103, 23, 63);
+
+            --light-mustard: rgb(241, 233, 188);
+            --medium-mustard: rgb(223, 198, 59);
+            --dark-mustard: rgb(151, 128, 1);
+
+            --light-lavender: rgb(230, 230, 250);
+            --medium-lavender: rgb(183, 178, 220);
+            --dark-lavender: rgb(85, 64, 118);
+
+            --light-grayscale: rgb(211, 211, 211);
+            --medium-grayscale: rgb(128, 128, 128);
+            --dark-grayscale: rgb(66, 66, 66);
+
+            --light-color: var(--light-periwinkle);
+            --medium-color: var(--medium-periwinkle);
+            --dark-color: var(--dark-periwinkle);
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#color-button").on("click", function() {
+            
+            })
+        });
+    </script>
 </head>
 <body>
     <nav>
@@ -17,5 +61,40 @@
         |
         <a href="quotes.html">Motivational Quotes</a>
     </nav>
+    <div class="main">
+        <h2>Change Theme</h2>
+        <form>
+            <div>
+                <select name="color">
+                    <option value="periwinkle">Periwinkle</option>
+                    <option value="sage">Sage</option>
+                    <option value="forest">Forest</option>
+                    <option value="rose">Rose</option>
+                    <option value="mustard">Mustard</option>
+                    <option value="lavender">Lavender</option>
+                    <option value="grayscale">Grayscale</option>
+                </select>
+            </div>
+            <input class="button" type="button" name="color-button" id="color-button" value="Update Theme">
+        </form>
+    </div>
+    <div>
+        <h2>Change Password</h2>
+        <form>
+            <div>
+                <label for="user">Username: </label>
+                <input name="user" id="user" type="text" required>
+            </div>
+            <div>
+                <label for="old-password">Current Password:</label>
+                <input name="old-password" id="old-password" type="password" required>
+            </div>
+            <div>
+                <label for="new-password">New Password:</label>
+                <input name="new-password" id="new-password" type="password" required>
+            </div>
+            <input class="button" type="submit" value="Update Password">
+        </form>
+    </div>
 </body>
 </html>
