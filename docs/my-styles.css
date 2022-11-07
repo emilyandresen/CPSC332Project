@@ -70,6 +70,7 @@
             padding: 3px;
         }
         ul {
+            text-align: left;
             list-style-type: circle;
         }
         img {
