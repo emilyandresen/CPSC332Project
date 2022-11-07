@@ -1,0 +1,86 @@
+
+        body {
+            /* EXTRA CREDIT special effect  */ 
+            background:rgb(200, 225, 255);
+            /* EXTRA CREDIT custom font */
+            font-family: 'Segoe UI';
+            font-size: 10pt;
+        }
+        h1, h2 {
+            color: rgb(0, 0, 100);
+            /* EXTRA CREDIT custom font */
+            /* https://www.fotor.com/blog/font-style-guide/ */
+            /* Both Segoe UI and Cambria are both easy to read and modern. Cambria's
+            serifs draw additional attention, which is good for headers. By contrast, 
+            Segoe UI is sans-serif, which makes is sleek and straightforward for the
+            body of the text.*/
+            font-family: "Cambria";
+            font-weight: bolder;
+        }
+        h3, caption {    
+            color: rgb(0, 0, 100);
+            font-family: "Cambria";
+            font-weight: normal;
+            font-size: medium;
+        }
+        nav {
+            text-align: right;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            padding: 5px;
+            background-color: rgb(170, 200, 255);
+            width: 100%;
+            height: 50px;
+        }
+        p {
+            border-top: 2pt dotted black;
+            border-bottom: 2pt dotted black;
+            padding: 2px;
+            text-align: center;
+        }
+        a {
+            color: unset;
+            text-decoration: unset;
+
+        }
+        .main {
+            margin-bottom: 100px;
+            position: relative;
+            text-align: center;
+            right: 0px;
+            top: 70px;
+        }
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 3px;
+        }
+        tr:nth-child(even) {
+            background-color: rgb(170, 200, 255);
+        }
+        ol {
+            list-style-type: decimal;
+            text-align: left;
+        }
+        ol li {
+            padding: 3px;
+        }
+        ul {
+            list-style-type: circle;
+        }
+        img {
+            margin: 5px;
+            width: 90%;
+            border: 3px solid rgb(50, 75, 180);
+            border-radius: 10%;
+            max-width: 600px;
+        }
+        .button {
+            border: 1pt solid black;
+            background-color: rgb(170, 200, 255);
+            padding: 5px;
+        }
