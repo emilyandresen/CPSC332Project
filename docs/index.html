@@ -4,25 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mental Health Journaling</title>
+    <title>Journaling Time</title>
     <link href="my-styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="#home">Home</a>
-       |
-        <a href="login.html">Login</a>
-        |
-        <a href="prompts.html">Journaling Prompts</a>
-        |
-        <a href="quotes.html">Motivational Quotes</a>
-        |
-        <a href="settings.html">Settings</a>
-    </nav>
+    <nav></nav>
     <div class="main">
         <h1>Welcome to the Journaling Time!</h1>
-        <h2>Free mental health journaling resource</h2>
-        <a class="button" href="login.html">Click to Log In</a>
+        <h3>Free mental health journaling resource</h2>
+        
+        <div id="login">
+            <h1>Returning User? Log in</h1>
+            <form action="user-home.html">
+                <div>
+                    <label for="user">Username: </label>
+                    <input name="user" id="user" type="text" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input name="password" id="password" type="password" required>
+                </div>
+                <input class="button" type="submit" value="Log in">
+            </form>
+        </div>
+        <div id="create-account">
+            <h1>New User? Create an Account</h1>
+            <form action="user-home.html">
+                <div>
+                    <label for="user">Create a Username: </label>
+                    <input name="user" id="user" type="text" required>
+                    <p class="small">Email address suggested, but not required</p>
+                </div>
+                <div>
+                    <label for="password">Create a Password:</label>
+                    <input name="password" id="password" type="password" required>
+                    <p class="small">Requirements: 8 characters, 1 number(s) and 1 special character(s)</p>
+                </div>
+                <input class="button" type="submit" value="Create Account">
+            </form>
+        </div>
     </div>
 </body>
 </html>
